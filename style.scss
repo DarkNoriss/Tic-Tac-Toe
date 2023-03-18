@@ -25,13 +25,18 @@ body {
   display: grid;
   gap: 1rem;
   background-color: $second-color;
-  height: 800px;
-  width: 800px;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
+  height: calc(900px + 2rem);
+  aspect-ratio: 1 / 1;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+  margin-top: 4rem;
 
-  .board {
+  & .board {
+    display: flex;
     background-color: $third-color;
+    justify-content: center;
+    place-items: center;
+    font-size: 8rem;
   }
 }
 
@@ -46,6 +51,43 @@ body {
   width: 100%;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  border: 0.25rem solid aliceblue;
+  padding: 4rem;
+  border-radius: 0.5rem;
+
+  & .top {
+    & p {
+      font-size: 4rem;
+      margin: 0;
+      margin-bottom: 4rem;
+    }
+  }
+  & .bot {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem;
+      width: 8rem;
+      height: 8rem;
+      font-size: 4rem;
+      border-radius: 0.5rem;
+    }
+    & .btnX {
+      background-color: $fourth-color;
+    }
+    & .btnO {
+      background-color: $fifth-color;
+    }
+  }
 }
 
 .nodecoration {

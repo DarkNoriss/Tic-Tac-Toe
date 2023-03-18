@@ -22,14 +22,22 @@
         DarkNoriss
       </a>
     </footer>
-    <dialog class="modal">
+    <dialog class="modal modalBegin">
       <div class="top">
         <p>Pick X or O</p>
       </div>
       <div class="bot">
-        <button class="btnX">X</button>
-        <button class="btnO">O</button>
+        <form method="dialog">
+          <button class="btnX">X</button>
+          <button class="btnO">O</button>
+        </form>
       </div>
+    </dialog>
+    <dialog class="modal modalEnd">
+      <form method="dialog">
+        <p class="modalText">Player win!</p>
+        <button class="btnAgain">Play again</button>
+      </form>
     </dialog>
     <script type="module" src="/main.js"></script>
   </body>

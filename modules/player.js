@@ -1,9 +1,10 @@
 export const player = () => {
   let sign;
-  const setSign = (string) => {
-    sign = string;
-  };
-  const getSigh = () => sign;
+  let score;
 
-  return { setSign, getSigh };
+  const setSign = (string) => (sign = string);
+  const getSigh = () => sign;
+  const setScore = () => score++;
+
+  return { setSign, getSigh, setScore };
 };

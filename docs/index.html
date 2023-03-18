@@ -9,8 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Tic Tac Toe</title>
-    <script type="module" crossorigin src="assets/index-cf1001b4.js"></script>
-    <link rel="stylesheet" href="assets/index-33f79439.css" />
+    <script type="module" crossorigin src="assets/index-b4b5dcc9.js"></script>
+    <link rel="stylesheet" href="assets/index-ef9b9c8f.css" />
   </head>
   <body>
     <header class="header">Tic Tac Toe</header>
@@ -24,14 +24,22 @@
         DarkNoriss
       </a>
     </footer>
-    <dialog class="modal">
+    <dialog class="modal modalBegin">
       <div class="top">
         <p>Pick X or O</p>
       </div>
       <div class="bot">
-        <button class="btnX">X</button>
-        <button class="btnO">O</button>
+        <form method="dialog">
+          <button class="btnX">X</button>
+          <button class="btnO">O</button>
+        </form>
       </div>
+    </dialog>
+    <dialog class="modal modalEnd">
+      <form method="dialog">
+        <p class="modalText">Player win!</p>
+        <button class="btnAgain">Play again</button>
+      </form>
     </dialog>
   </body>
 </html>

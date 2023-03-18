@@ -1,8 +1,8 @@
 export const gameboard = () => {
   const board = new Array(9);
 
-  const getBoard = () => board;
   const setBoard = (index, sign) => (board[index] = sign);
+  const getBoard = (index) => board[index];
 
-  return { getBoard, setBoard };
+  return { setBoard, getBoard };
 };
